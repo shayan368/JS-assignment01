@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+    JavaScript Fundamentals - Part 1 <br>
+
+LECTURE: Values and Variables <br>
+1. Declare variables called 'country', 'continent' and 'population' and <br>
+assign their values according to your own country (population in millions) <br>
+2. Log their values to the console <br>
+
+LECTURE: Data Types <br>
+1. Declare a variable called 'isIs land' and set its value according to your <br>
+country. The variable should hold a Boolean value. Also declare a variable <br>
+'language', but don't assign it any value yet <br>
+2. Log the types of 'isIsland', 'population', 'country' and ' language' <br>
+to the console <br>
+
+LECTURE: let, const and var <br>
+1. Set the value of ' language' to the language spoken where you live (some <br>
+countries have multiple languages, but just choose one) <br>
+2. Think about which variables should be const variables (which values will never <br>
+change, and which might change?). Then, change these variables to const. <br>
+3. Try to change one of the changed variables now, and observe what happens <br>
+
+LECTURE: Basic Operators <br>
+1. If your country split in half, and each half would contain half the population, <br>
+then how many people would live in each half? <br>
+2. Increase the population of your country by 1 and log the result to the console <br>
+3. Finland has a population of 6 million. Does your country have more people than <br>
+Finland? <br>
+4. The average population of a country is 33 million people. Does your country <br>
+have less people than the average country? <br>
+5. Based on the variables you created, create a new variable 'description' <br>
+which contains a string with this format: 'Portugal is in Europe, and its 11 million <br>
+people speak portuguese' <br>
+    
+</body>
+<script>
+    // ANSWER 01
+
+    // let country = "Pakistan"
+    // let continent = "Asia"
+    // let population = "247.5 million"
+    // // ANSWER 02
+    // console.log(country);
+    // console.log(continent);
+    // console.log(population);
+
+    // // ANSWER 03
+
+    // let isIsland = false;
+    // let language;
+
+    // // ANSWER 04
+    // console.log("Type of isIsland:", typeof isIsland);
+    // console.log("Type of population:", typeof population);
+    // console.log("Type of country:", typeof country);
+    // console.log("Type of language:", typeof language);
+
+    // ANSWER 05
+    
+    // language = "urdu"
+    const country ="Pakistan"
+    const continent = "Asia"
+    const isIsland = false;
+
+    let population = 245000000
+    let language = "urdu"
+
+    // ANSWER 06
+    // 01
+    let halfpopulation = population / 2
+    console.log(halfpopulation, "million")
+    // 02
+    population++;
+    console.log(population, "million");
+    // 03
+    console.log(population > 6000000)
+    // 04
+    console.log(population < 33000000)
+    // 05
+
+    console.log(country + " is in " + continent + ", and its " + halfpopulation + 
+    " million people speak " + language + ".")
+
+
+
+
+
+    
+</script>
+</html>
